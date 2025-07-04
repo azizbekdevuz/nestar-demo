@@ -16,41 +16,48 @@
                 z-index: 99;
                 align-items: center;
                 border-top: 1px solid rgba(255, 255, 255, 0.7);
+
                 &.transparent {
                     background-color: #181a209e;
                 }
+
                 .container {
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
+
                     .logo-box {
                         img {
                             width: 150px;
                             cursor: pointer;
                         }
                     }
+
                     .router-box {
                         position: relative;
                         width: 617px;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
+
                         div {
-                        position: relative;
-                        color: #eeeeeeed;
-                        font-family: $font;
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        cursor: pointer;
+                            position: relative;
+                            color: #eeeeeeed;
+                            font-family: $font;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            cursor: pointer;
                         }
                     }
+
                     .user-box {
                         width: 270px;
                         display: flex;
                         flex-direction: row;
                         justify-content: flex-end;
+
                         .join-box {
                             width: 184px;
                             height: 47px;
@@ -60,6 +67,7 @@
                             border-radius: 60px;
                             border: 1px solid #ffffff;
                             cursor: pointer;
+
                             svg {
                                 font-family: $font;
                                 font-size: 14px;
@@ -69,6 +77,7 @@
                                 color: #ffffff;
                             }
                         }
+
                         .login-user {
                             img {
                                 width: 42px;
@@ -80,19 +89,22 @@
                     }
                 }
             }
-        }     
+        }
     }
+
     .header-main {
         position: relative;
         width: 100%;
         height: 860px;
         background-image: url('/img/banner/header1.svg');
         background-size: cover;
+
         .container {
             position: relative;
             margin-top: 20px;
             flex-direction: column;
             align-items: center;
+
             .search-box {
                 position: relative;
                 margin-top: 615px;
@@ -104,11 +116,13 @@
                 justify-content: space-between;
                 background: rgba(255, 255, 255, 0.28);
                 border-radius: 12px;
+
                 .select-box {
                     width: 712px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+
                     .box {
                         padding: 24px 22px;
                         width: 213px;
@@ -121,11 +135,13 @@
                         background: rgba(255, 255, 255, 0.575);
                         box-sizing: border-box;
                         cursor: pointer;
+
                         &.on {
                             background: #ffffff;
                             border: 1px solid #000;
                             color: #181a20;
                         }
+
                         span {
                             color: #181a20;
                             font-family: $font;
@@ -136,30 +152,35 @@
                         }
                     }
                 }
+
                 .search-box-other {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+
                     .advanced-filter {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
+
                         img {
                             margin-right: 10px;
                             width: 25px;
                             height: 22px;
                             cursor: pointer;
                         }
+
                         span {
                             color: #fff;
                             font-family: $font;
                             font-size: 20px;
-                            font-style: normal; 
+                            font-style: normal;
                             font-weight: 600;
                             line-height: normal;
                             cursor: pointer;
                         }
                     }
+
                     .search-btn {
                         margin-left: 12px;
                         width: 62px;
@@ -170,6 +191,7 @@
                         border-radius: 55px;
                         background: #f17742;
                         cursor: pointer;
+
                         svg {
                             width: 20px;
                             height: 20px;
@@ -177,6 +199,7 @@
                         }
                     }
                 }
+
                 .filter-location {
                     position: absolute;
                     padding: 40px 60px;
@@ -195,22 +218,26 @@
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     box-sizing: border-box;
                     z-index: 2;
+
                     &.on {
                         visibility: visible;
                         transition: 0.2s ease-out;
                         background: #fffdfd;
                     }
+
                     div {
                         width: 295px;
                         display: flex;
                         flex-direction: row;
                         align-items: center;
+
                         img {
                             width: 122px;
                             height: 85px;
                             border-radius: 15px;
                             cursor: pointer;
                         }
+
                         span {
                             margin-left: 22px;
                             color: #181a20;
@@ -222,11 +249,13 @@
                             cursor: pointer;
                             text-transform: capitalize;
                         }
+
                         label {
                             line-height: 13px;
                         }
                     }
                 }
+
                 .filter-type {
                     position: absolute;
                     padding: 50px;
@@ -244,11 +273,13 @@
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     box-sizing: border-box;
                     z-index: 1;
+
                     &.on {
                         visibility: visible;
                         transition: 0.2s ease-out;
                         background: #fffdfd;
                     }
+
                     div {
                         position: relative;
                         width: 272px;
@@ -256,6 +287,7 @@
                         border-radius: 15px;
                         cursor: pointer;
                         background-size: cover;
+
                         span {
                             position: absolute;
                             top: 13px;
@@ -272,6 +304,7 @@
                         }
                     }
                 }
+
                 .filter-rooms {
                     position: absolute;
                     padding: 10px 92px;
@@ -290,33 +323,37 @@
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     box-sizing: border-box;
                     z-index: 1;
+
                     &.on {
-                    visibility: visible;
-                    transition: 0.2s ease-out;
-                    background: #fffdfd;
-                }
-                span {
-                    display: flex;
-                    align-items: center;
-                    padding: 10px 30px;
-                    border: 1px solid #fffdfd;
-                    color: #181a20;
-                    font-family: $font;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
-                    cursor: pointer;
-                    &:hover {
-                        border-radius: 5px;
-                        border: 1px solid #b9b9b9;
-                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        visibility: visible;
+                        transition: 0.2s ease-out;
+                        background: #fffdfd;
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 30px;
+                        border: 1px solid #fffdfd;
+                        color: #181a20;
+                        font-family: $font;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px;
+                        cursor: pointer;
+
+                        &:hover {
+                            border-radius: 5px;
+                            border: 1px solid #b9b9b9;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        }
                     }
                 }
             }
         }
     }
-}
+
     .header-basic {
         position: relative;
         width: 100%;
@@ -325,31 +362,36 @@
         flex-direction: row;
         justify-content: center;
         background: black;
+
         &.auth {
             height: 300px;
         }
+
         .container {
             margin-top: 175px;
+
             strong {
-            color: #fff;
-            font-family: $font;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: 0.96px;
-            text-transform: capitalize;
+                color: #fff;
+                font-family: $font;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.96px;
+                text-transform: capitalize;
             }
+
             span {
-            color: #fff;
-            font-family: $font;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 26px;
-            } 
-        }    
+                color: #fff;
+                font-family: $font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
     }
+
     #footer {
         position: relative;
         padding: 60px 0px 18px 0px;
@@ -358,156 +400,178 @@
         display: flex;
         flex-direction: row;
         background: #181a20;
+
         .footer-container {
             width: 1300px;
             height: auto;
             margin: 0 auto;
+
             .main {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-            .left {
-                height: 360px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                .footer-box {
+
+                .left {
+                    height: 360px;
                     display: flex;
                     flex-direction: column;
-                .logo {
-                    width: 128px;
-                    height: 52px;
-                    cursor: pointer;
+                    justify-content: space-between;
+
+                    .footer-box {
+                        display: flex;
+                        flex-direction: column;
+
+                        .logo {
+                            width: 128px;
+                            height: 52px;
+                            cursor: pointer;
+                        }
+
+                        span {
+                            color: #bebdbd;
+                            font-family: $font;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+
+                        p {
+                            color: #fff;
+                            font-family: $font;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+
+                        .media-box {
+                            margin-top: 12px;
+                            color: #929495;
+
+                            svg {
+                                font-size: 32px;
+                                margin-right: 22px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+
+                    .top {
+                        display: flex;
+                        flex-direction: column;
+
+                        strong {
+                            color: #fff;
+                            font-family: $font;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+
+                        div {
+                            padding: 20px 30px;
+                            margin-top: 20px;
+                            width: 667px;
+                            height: 70px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            box-sizing: border-box;
+                            background: #212329;
+
+                            input {
+                                margin-right: 10px;
+                                width: 85%;
+                                border: none;
+                                outline: none;
+                                color: #fff;
+                                font-family: $font;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 26px;
+                                background: none;
+                            }
+
+                            span {
+                                color: #fff;
+                                font-family: $font;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        margin-top: 60px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+
+                            strong {
+                                margin-bottom: 3px;
+                                color: #fff;
+                                font-family: $font;
+                                font-size: 15px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                text-transform: capitalize;
+                            }
+
+                            span {
+                                margin-top: 25px;
+                                color: #bebdbd;
+                                font-family: $font;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                cursor: pointer;
+
+                                &.hover {
+                                    color: #ffffff;
+                                    text-decoration-line: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .second {
+                margin-top: 60px;
+                height: 45px;
+                border-top: 1px solid #212329;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+
                 span {
                     color: #bebdbd;
                     font-family: $font;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
-                    text-transform: capitalize;
-                }
-                p {
-                    color: #fff;
-                    font-family: $font;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 600;
                     line-height: normal;
-                    text-transform: capitalize;
-                }
-                .media-box {
-                    margin-top: 12px;
-                    color: #929495;
-                    svg {
-                        font-size: 32px;
-                        margin-right: 22px;
-                        cursor: pointer;
-                    }
                 }
             }
-        }
-        .right {
-            display: flex;
-            flex-direction: column;
-            .top {
-                display: flex;
-                flex-direction: column;
-                strong {
-                    color: #fff;
-                    font-family: $font;
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    text-transform: capitalize;
-                }
-                div {
-                    padding: 20px 30px;
-                    margin-top: 20px;
-                    width: 667px;
-                    height: 70px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    box-sizing: border-box;
-                    background: #212329;
-                    input {
-                        margin-right: 10px;
-                        width: 85%;
-                        border: none;
-                        outline: none;
-                        color: #fff;
-                        font-family: $font;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 26px;
-                        background: none;
-                    }
-                    span {
-                        color: #fff;
-                        font-family: $font;
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        cursor: pointer;
-                    }
-                }
-            }
-            .bottom {
-                margin-top: 60px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    strong {
-                        margin-bottom: 3px;
-                        color: #fff;
-                        font-family: $font;
-                        font-size: 15px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
-                        text-transform: capitalize;
-                    }
-                    span {
-                        margin-top: 25px;
-                        color: #bebdbd;
-                        font-family: $font;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 400;
-                        cursor: pointer;
-                        &.hover {
-                            color: #ffffff;
-                            text-decoration-line: underline;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .second {
-        margin-top: 60px;
-        height: 45px;
-        border-top: 1px solid #212329;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        span {
-            color: #bebdbd;
-            font-family: $font;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-    }
         }
     }
 }
