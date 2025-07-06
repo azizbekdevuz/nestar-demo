@@ -1,11 +1,16 @@
-import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import { Stack } from "@mui/material";
+import React from "react";
 import { NextPage } from "next";
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import ComingSoon from "@/libs/components/ComingSoon";
 
 const Community: NextPage = () => {
     return (
-        <div style={{ margin: "20px 0" }}>
-            <Stack className="container">COMMUNITY</Stack>
+        <div id={"community-page"}>
+            <ComingSoon 
+                pageTitle="Community"
+                description="Join our vibrant real estate community where property enthusiasts, investors, and homeowners connect, share insights, and build lasting relationships."
+                className="community-coming-soon"
+            />
         </div>
     );
 };

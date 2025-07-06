@@ -1,11 +1,16 @@
-import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import { Stack } from "@mui/material";
+import React from "react";
 import { NextPage } from "next";
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import ComingSoon from "@/libs/components/ComingSoon";
 
 const AgentList: NextPage = () => {
     return (
-        <div style={{ margin: "20px 0" }}>
-            <Stack className="container">Agents</Stack>
+        <div id={"agents-page"}>
+            <ComingSoon 
+                pageTitle="Agents"
+                description="Our elite real estate agents platform is being developed with cutting-edge AI matching technology to connect you with the perfect property professionals."
+                className="agents-coming-soon"
+            />
         </div>
     );
 };
