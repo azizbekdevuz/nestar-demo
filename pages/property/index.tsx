@@ -5,77 +5,92 @@ import PropertyCard from "@/libs/components/property/PropertyCard";
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Filter from "@/libs/components/property/Filter";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 
 const PropertyList: NextPage = () => {
+  const device = useDeviceDetect();
   const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5, 6]);
 
-  return (
-    <div id={"property-list-page"} style={{ position: "relative" }}>
-      <Stack className={"container"}>
-        <Box className={"right"}>
-          <span>Sort by</span>
-          <div>
-            <Button endIcon={<KeyboardArrowDownRoundedIcon />}>New</Button>
-          </div>
-        </Box>
-        <Stack className={"property-page"}>
-          <Stack className={"filter-config"}>
-            <Filter />
-          </Stack>
-          <Stack className={"main-config"} mb={"76px"}>
-            <Stack className={"list-config"}>
-              {properties.map((property, index) => {
-                return <PropertyCard key={index} />;
-              })}
+  if (device === "mobile") {
+    return <Stack className="container">PROPERTY PAGE MOBILE</Stack>;
+  } else {
+    return (
+      <div id={"property-list-page"} style={{ position: "relative" }}>
+        <Stack className={"container"}>
+          <Box className={"right"}>
+            <span>Sort by</span>
+            <div>
+              <Button endIcon={<KeyboardArrowDownRoundedIcon />}>New</Button>
+            </div>
+          </Box>
+          <Stack className={"property-page"}>
+            <Stack className={"filter-config"}>
+              <Filter />
             </Stack>
-
-            <Stack className={"pagination-config"}>
-              <Stack className={"pagination-box"}>
-                <Pagination
-                  page={1}
-                  count={5}
-                  shape="circular"
-                  color="primary"
-                />
+            <Stack className={"main-config"} mb={"76px"}>
+              <Stack className={"list-config"}>
+                {properties.map((property, index) => {
+                  return <PropertyCard key={index} />;
+                })}
               </Stack>
-              <Stack className={"total-result"}>
-                <Typography>Total 5 properties available</Typography>
-                <Box className="publisher-badge">
-                  <Stack className="publisher-content">
-                    <Box className="publisher-glow" />
-                    <Stack 
-                      className="publisher-text" 
-                      direction="row" 
-                      alignItems="center" 
-                      spacing={1}
-                    >
-                      <Typography className="publisher-main" variant="body2">
-                        Published by
-                      </Typography>
-                      <Typography className="publisher-highlight" variant="body2">
-                        Leo
-                      </Typography>
-                      <Typography className="publisher-separator" variant="body2">
-                        |
-                      </Typography>
-                      <Typography className="publisher-accent" variant="body2">
-                        MIT25
-                      </Typography>
+
+              <Stack className={"pagination-config"}>
+                <Stack className={"pagination-box"}>
+                  <Pagination
+                    page={1}
+                    count={5}
+                    shape="circular"
+                    color="primary"
+                  />
+                </Stack>
+                <Stack className={"total-result"}>
+                  <Typography>Total 5 properties available</Typography>
+                  <Box className="publisher-badge">
+                    <Stack className="publisher-content">
+                      <Box className="publisher-glow" />
+                      <Stack
+                        className="publisher-text"
+                        direction="row"
+                        alignItems="center"
+                        spacing={1}
+                      >
+                        <Typography className="publisher-main" variant="body2">
+                          Published by
+                        </Typography>
+                        <Typography
+                          className="publisher-highlight"
+                          variant="body2"
+                        >
+                          Leo
+                        </Typography>
+                        <Typography
+                          className="publisher-separator"
+                          variant="body2"
+                        >
+                          |
+                        </Typography>
+                        <Typography
+                          className="publisher-accent"
+                          variant="body2"
+                        >
+                          MIT25
+                        </Typography>
+                      </Stack>
+                      <Box className="publisher-particles">
+                        <Box className="particle" />
+                        <Box className="particle" />
+                        <Box className="particle" />
+                      </Box>
                     </Stack>
-                    <Box className="publisher-particles">
-                      <Box className="particle" />
-                      <Box className="particle" />
-                      <Box className="particle" />
-                    </Box>
-                  </Stack>
-                </Box>
+                  </Box>
+                </Stack>
               </Stack>
             </Stack>
           </Stack>
         </Stack>
-      </Stack>
-    </div>
-  );
+      </div>
+    );
+  }
 };
 
 export default withLayoutBasic(PropertyList);
